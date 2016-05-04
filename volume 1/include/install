@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "copy unp.h to system directory"
+sudo cp unp.h /usr/include/ 
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "copy unpipc.h to system directory"
+sudo cp unpipc.h /usr/include/

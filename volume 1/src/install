@@ -1,0 +1,55 @@
+#!/bin/bash
+
+pause()
+{
+    echo "press any key to exit ..."
+    read c
+}
+
+echo "step 1: generate object files ..."
+gcc -g -c *.c
+if [ $? -eq 0 ]
+then
+    echo "step 1 done ..."
+else
+    echo "step 1 failed ..."
+    pause
+    exit 1
+fi
+
+echo
+echo "step 2: generate static library ..."
+ar -rcsv libunp.a *.o
+if [ $? -eq 0 ]
+then
+    echo "step 2 done ..."
+else
+    echo "step 2 failed ..."
+    pause
+    exit 1
+fi
+
+echo
+echo "step 3: remove object files ..."
+rm *.o
+if [ $? -eq 0 ]
+then
+    echo "step 3 done ..."
+else
+    echo "step 3 failed ..."
+    pause
+    exit 1
+fi
+
+echo
+echo "step 4: copy libunp.a to /usr/lib"
+sudo cp libunp.a /usr/lib/libunp.a
+rm libunp.a
+if [ $? -eq 0 ]
+then
+    echo "step 4 done ..."
+else
+    echo "step 4 failed ..."
+    pause
+    exit 1
+fi 
