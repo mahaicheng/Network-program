@@ -1,13 +1,12 @@
 /*************************************************************************
-	> 文件名: 6-3.c
-	> 作者: 马海城
-	> 邮箱: hchma@outlook.com
-	> 创建日期: 2015年11月18日 星期三 21时39分05秒
+        > 文件名: 6-3.c
+        > 作者: 马海城
+        > 邮箱: hchma@outlook.com
+        > 创建日期: 2015年11月18日 星期三 21时39分05秒
  ************************************************************************/
 
-#include<unpipc.h>
+#include <unpipc.h>
 
-int main(int argc, char* argv[])
-{
-    int msqid = msgget(IPC_PRIVATE, SVMSG_MODE | IPC_CREAT);
+int main(int argc, char* argv[]) {
+  int msqid = msgget(IPC_PRIVATE, SVMSG_MODE | IPC_CREAT);
 }
