@@ -1,0 +1,6 @@
+/semsysconf
+/semunlink
+/semwait
+/semcreate
+/semgetvalue
+/sempost

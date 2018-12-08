@@ -1,0 +1,4 @@
+/shmwrite
+/shmget
+/shmread
+/shmrmid

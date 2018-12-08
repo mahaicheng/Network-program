@@ -1,0 +1,6 @@
+/shmwrite
+/client1
+/server1
+/shmcreate
+/shmread
+/shmunlink

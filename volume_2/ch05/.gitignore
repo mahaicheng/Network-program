@@ -1,0 +1,6 @@
+/mqunlink
+/mqcreate
+/mqcreatel
+/mqgetattr
+/mqsend
+/mqsysconf
